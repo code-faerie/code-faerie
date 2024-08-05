@@ -1,7 +1,12 @@
 {
+  "scripts": {
+    "watch": "concurrently --kill-others \"npx tailwindcss -o assets/css/main.css --watch\" \"bundle exec jekyll serve --livereload\"",
+    "build": "npx tailwindcss -o assets/css/main.css --minify && bundle exec jekyll build"
+  },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.20",
+    "concurrently": "^8.2.2",
     "cssnano": "^7.0.4",
     "postcss": "^8.4.40",
     "postcss-import": "^16.1.0",
