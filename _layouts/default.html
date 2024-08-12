@@ -4,9 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    {% if jekyll.environment == 'development' %}<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">{% else %}<link rel="stylesheet" href="{{ "/assets/css/main.min.css" | relative_url }}">{% endif %}
   </head>
-  <body class="text-red-500">
-    {{ content }}
+  <body>
+    <div id="page" class="md:grid md:grid-cols-12 md:gap-4">
+        <div id="header" class="h-12 md:min-h-screen md:flex-1 md:col-span-2 border-black border-b-2 md:border-b-0 md:border-r-2">
+            <a href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
+        </div>
+        <div id="content" class="md:col-span-10">
+            {{ content }}
+        </div>
+    </div>
   </body>
 </html>
