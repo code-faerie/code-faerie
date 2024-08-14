@@ -2,7 +2,7 @@
   "scripts": {
     "watch": "concurrently --kill-others \"npx tailwindcss -i assets/css/tailwind.css -o assets/css/main.css --watch\" \"JEKYLL_ENV=development bundle exec jekyll serve --livereload\"",
     "build:dev": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/main.css && JEKYLL_ENV=development bundle exec jekyll build",
-    "build:prod": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/main.min.css --minify && JEKYLL_ENV=production bundle exec jekyll build"
+    "build:prod": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/main.min.css --minify && JEKYLL_ENV=production bundle exec jekyll build",
     "preview": "JEKYLL_ENV=production bundle exec jekyll serve"
   },
   "devDependencies": {
