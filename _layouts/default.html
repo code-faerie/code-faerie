@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang }}">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    {% if jekyll.environment == 'development' %}<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">{% else %}<link rel="stylesheet" href="{{ "/assets/css/main.min.css" | relative_url }}">{% endif %}
+    {% if jekyll.environment == 'development' %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.min.css" | relative_url }}">
+    {% endif %}
   </head>
   <body>
     <div id="page" class="md:grid md:grid-cols-12 md:gap-4">
-        <div id="header" class="h-12 md:min-h-screen md:flex-1 md:col-span-2 border-black border-b-2 md:border-b-0 md:border-r-2">
+        <div id="header" class="bg-fuchsia-100 min-h-28 p-4 mb-4 md:mb-0 md:min-h-screen md:col-span-2 border-fuchsia-200 border-b-2 md:border-b-0 md:border-r-2">
             <a href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
         </div>
-        <div id="content" class="md:col-span-10">
+        <div id="content" class="md:col-span-10 mt-0 md:mt-4 ml-4 md:ml-0 mr-4 mb-4">
             {{ content }}
         </div>
     </div>

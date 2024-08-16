@@ -554,8 +554,36 @@ video {
   --tw-contain-style:  ;
 }
 
-.h-12 {
-  height: 3rem;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.min-h-12 {
+  min-height: 3rem;
+}
+
+.min-h-36 {
+  min-height: 9rem;
+}
+
+.min-h-32 {
+  min-height: 8rem;
+}
+
+.min-h-28 {
+  min-height: 7rem;
 }
 
 .border-b-2 {
@@ -567,6 +595,35 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-fuchsia-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(240 171 252 / var(--tw-border-opacity));
+}
+
+.border-fuchsia-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 208 254 / var(--tw-border-opacity));
+}
+
+.border-fuchsia-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 232 255 / var(--tw-border-opacity));
+}
+
+.bg-fuchsia-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 208 254 / var(--tw-bg-opacity));
+}
+
+.bg-fuchsia-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 232 255 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
 @media (min-width: 768px) {
   .md\:col-span-10 {
     grid-column: span 10 / span 10;
@@ -576,16 +633,32 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:grid {
     display: grid;
   }
 
   .md\:min-h-screen {
     min-height: 100vh;
-  }
-
-  .md\:flex-1 {
-    flex: 1 1 0%;
   }
 
   .md\:grid-cols-12 {
